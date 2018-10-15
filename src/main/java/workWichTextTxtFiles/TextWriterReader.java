@@ -1,4 +1,4 @@
-package workWichTextTxt;
+package workWichTextTxtFiles;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -9,7 +9,7 @@ import java.util.List;
 public class TextWriterReader {
 
 
-    public static void main(String[] args) {
+    public List listModifiPhone() {
 
         String track= trackToFiles(); // Stiezka do faila gdzie liezy program
 
@@ -28,7 +28,7 @@ public class TextWriterReader {
                 lines.add(line);
             }
             br.close();
-            System.out.println("input file: "+lines);
+       //     System.out.println("input file: "+lines);
 
         } catch (FileNotFoundException e) {
             e.printStackTrace();
@@ -52,7 +52,7 @@ public class TextWriterReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+       return lines;
     }
 
     public static String trackToFiles() {
@@ -60,7 +60,7 @@ public class TextWriterReader {
        // System.out.println(track);
 
         String [] splitTrack =track.split("");
-        System.out.println(splitTrack.length);
+     //   System.out.println(splitTrack.length);
         track="";
 
 
