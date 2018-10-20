@@ -3,11 +3,10 @@ package workWichExcel;
 import workWichTextTxtFiles.TextWriterReader;
 
 import java.io.IOException;
-import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-public class AnalizatorTEST {
+public class AnalizatorExselText {
     public static void main(String[] args) throws IOException {
         ExcelWriter excelWriter = new ExcelWriter();
         TextWriterReader textWriterReader = new TextWriterReader();
@@ -28,9 +27,9 @@ public class AnalizatorTEST {
                         while ((numberOrTextFromList[0].equals("0") == true) && (numberOrTextFromList[1].equals("7") == true)) { // пока в списке телефон, то добавляем его в Мап
 
 
-                            List l1= (List<String>) m.get(mapWord);
+                            List l1 = (List<String>) m.get(mapWord);
                             l1.add(listWordText);
-                             m.put(mapWord,l1);
+                            m.put(mapWord, l1);
                             if (i == l.size() - 1) {
                                 break;
                             }
