@@ -6,12 +6,12 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
-public class AnalizatorExselText {
-    public static void main(String[] args) throws IOException {
-        ExcelWriter excelWriter = new ExcelWriter();
+public class AnalizatorExcelText {
+    public Map  analizatorExcTex()throws IOException {
+        ExcelReader excelReader = new ExcelReader();
         TextWriterReader textWriterReader = new TextWriterReader();
         List l = textWriterReader.listModifiPhone(); // List from TextWriter
-        Map m = excelWriter.exselWriterMap();  // Maps from Exsel Writer
+        Map m = excelReader.exselWriterMap();  // Maps from Exsel Writer
 
         for (int i = 0; i < l.size(); i++) {     // List size for беребрать evry elements
             String listWordText = (String) l.get(i);
@@ -46,7 +46,8 @@ public class AnalizatorExselText {
                 }
             }
         }
-        System.out.println(m);
+     //   System.out.println(m);
+        return m;
     }
 
 
