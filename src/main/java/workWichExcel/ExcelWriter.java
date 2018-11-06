@@ -1,9 +1,7 @@
 package workWichExcel;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.*;
 import workWichTextTxtFiles.TextWriterReader;
 
 import java.io.FileOutputStream;
@@ -21,27 +19,29 @@ public class ExcelWriter {
 
         Workbook wb = new HSSFWorkbook();
         Sheet sheet = wb.createSheet("processedFiles");
+        Row row;
 
-        int j = 0;  // cell
+        int i = 0;
         for (Object list : m.keySet()) {
-            int i = 0;   //row
-            List list1 = (List) m.get(list);
+             List list1 = (List) m.get(list);
             for (int k = 0; k < list1.size(); k++) {
-                // System.out.println(list1);
-                String textFromList = (String) list1.get(k);
-                System.out.print(textFromList);
-                Cell cell = sheet.createRow(i).createCell(j);
-                cell.setCellValue(textFromList);
-            //    wb.write(new FileOutputStream(track));
-                i++;
+                if(sheet.getRow(k) == null ){
 
-            } j++;
-            System.out.println();
-        }
+                    String textFromList = (String) list1.get(k);
+                    Cell cell = sheet.createRow(k).createCell(i,CellType.STRING);
+                    cell.setCellValue(textFromList);
+                }else {
+                    String textFromList = (String) list1.get(k);
+                    Cell cell = sheet.getRow(k).createCell(i,CellType.STRING);
+                    cell.setCellValue(textFromList);
+                }
+
+
+            } i++;
+         }
         FileOutputStream fileOut= new FileOutputStream(track);
         wb.write(fileOut);
         fileOut.close();
-      //  wb.write(new FileOutputStream(track));
         wb.close();
     }
 }

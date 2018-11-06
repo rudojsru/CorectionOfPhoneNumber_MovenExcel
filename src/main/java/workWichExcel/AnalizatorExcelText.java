@@ -12,6 +12,7 @@ public class AnalizatorExcelText {
         TextWriterReader textWriterReader = new TextWriterReader();
         List l = textWriterReader.listModifiPhone(); // List from TextWriter
         Map m = excelReader.exselWriterMap();  // Maps from Exsel Writer
+      //  List l = excelReader.listHeadline();
 
         for (int i = 0; i < l.size(); i++) {     // List size for беребрать evry elements
             String listWordText = (String) l.get(i);

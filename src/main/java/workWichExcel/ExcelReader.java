@@ -8,11 +8,9 @@ import org.apache.poi.ss.usermodel.Workbook;
 import workWichTextTxtFiles.TextWriterReader;
 
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ExcelReader {
 
@@ -24,7 +22,7 @@ public class ExcelReader {
         Sheet sheet = wb.getSheetAt(0);
 //-----------------------
         int numer = sheet.getRow(0).getLastCellNum();
-        Map<String, List<String>> data = new HashMap<>();
+        Map<String, List<String>> data = new LinkedHashMap<>();
         System.out.println(sheet.getLastRowNum());
         for (int q = 0; q < numer; q++) {
             String nameList = String.valueOf(sheet.getRow(0).getCell(q));
@@ -42,12 +40,15 @@ public class ExcelReader {
        //     System.out.println(data.get(nameList));
         }
 
+
         fis.close();
         wb.close(); //// Closing the workbook
 
 
         return data;
     }
+
+
 
     public static String getCellText(Cell cell) {
         // Alternatively, get the value and format it yourselfcellIteratorcellIteratorcellIteratorcellIterator
