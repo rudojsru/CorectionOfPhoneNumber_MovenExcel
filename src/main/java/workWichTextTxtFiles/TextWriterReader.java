@@ -24,8 +24,11 @@ public class TextWriterReader {
             br = new BufferedReader(new FileReader(TEXT));
 
             while ((line = br.readLine()) != null) {
-                line=newPhoneNumber(line);
-                lines.add(line);
+
+                if (!line.equals("") ) {  // что бы небыло скопировано пустой строчки
+                    line=newPhoneNumber(line);  // obrobka numeru telefona
+                    lines.add(line);
+                }
             }
             br.close();
        //     System.out.println("input file: "+lines);
@@ -84,13 +87,13 @@ public class TextWriterReader {
             arrayList.addAll(Arrays.asList(line.split("")).subList(2,line.length()));
             arrayList.set(0,"0");
             arrayList.add(arrayList.size(),";");
-            backLine=arrayList.toString().replaceAll("[,\\s\\[\\]]", "");
+            backLine=arrayList.toString().replaceAll("[,\\s\\[\\],[?]]", "");
         }else
         if (((ifNumver[0].equals("0"))&&(ifNumver[1].equals("0")))){
             arrayList.addAll(Arrays.asList(line.split("")).subList(3,line.length()));
             arrayList.set(0,"0");
             arrayList.add(arrayList.size(),";");
-            backLine=arrayList.toString().replaceAll("[,\\s\\[\\]]", "");
+            backLine=arrayList.toString().replaceAll("[,\\s\\[\\],[?]]", "");
         }
          else {
             backLine=line;
