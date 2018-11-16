@@ -6,7 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9fadd8f-c3a9-40c8-8b45-79ad59feec37" name="Default Changelist" comment="" />
+    <list default="true" id="c9fadd8f-c3a9-40c8-8b45-79ad59feec37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.~lock.modifiedExcel.xls#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ex3.xls" beforeDir="false" afterPath="$PROJECT_DIR$/ex3.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modifiedExcel.xls" beforeDir="false" afterPath="$PROJECT_DIR$/modifiedExcel.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modifiedText.txt" beforeDir="false" afterPath="$PROJECT_DIR$/modifiedText.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workWichExcel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workWichExcel/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/workWichExcel/SearchDoublePhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/workWichExcel/SearchDoublePhone.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -108,14 +116,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
-          <entry key="java" value="1227" />
-          <entry key="txt" value="22" />
+          <entry key="java" value="1254" />
+          <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1227" />
-          <entry key="PLAIN_TEXT" value="27" />
+          <entry key="JAVA" value="1254" />
+          <entry key="PLAIN_TEXT" value="31" />
         </counts>
       </usages-collector>
     </session>
@@ -124,14 +132,14 @@
     <favorites_list name="CorectionOfPhoneNumber_MovenExcel" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6403909">
+    <splitter split-orientation="horizontal" split-proportion="0.48938826">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/workWichExcel/SearchDoublePhone.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="38" column="65" lean-forward="true" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
+                <state relative-caret-position="338">
+                  <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -146,8 +154,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/workWichExcel/Main.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="456">
-                  <caret line="82" column="38" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="82" selection-end-column="38" />
+                <state relative-caret-position="196">
+                  <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -200,9 +208,9 @@
         <option value="$PROJECT_DIR$/src/main/java/workWichExcel/ExcelWriter.java" />
         <option value="$PROJECT_DIR$/src/main/java/workWichExcel/Test2.java" />
         <option value="$PROJECT_DIR$/src/main/java/workWichExcel/Test.java" />
-        <option value="$PROJECT_DIR$/src/main/java/workWichExcel/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/workWichExcel/SearchDoubleRoom.java" />
         <option value="$PROJECT_DIR$/src/main/java/workWichExcel/SearchDoublePhone.java" />
+        <option value="$PROJECT_DIR$/src/main/java/workWichExcel/Main.java" />
       </list>
     </option>
   </component>
@@ -225,10 +233,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="67" />
-    <option name="y" value="25" />
-    <option name="width" value="1853" />
-    <option name="height" value="1055" />
+    <option name="x" value="-2" />
+    <option name="y" value="137" />
+    <option name="width" value="1843" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -293,7 +301,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542373893171" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542375156745" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Bin/Tomek/TestText/CorectionOfPhoneNumber" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -326,7 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.SearchDoublePhone">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -456,8 +464,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SearchDoublePhone" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SearchDoublePhone" />
         <item itemvalue="Application.Test2" />
         <item itemvalue="Application.Test" />
         <item itemvalue="Application.CopiExcelSheet" />
@@ -503,7 +511,21 @@
       <option name="project" value="LOCAL" />
       <updated>1542373838822</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new file EXCEL =text+oldExcel&#10;06.11.2018        &#10;&#10;All is ready">
+      <created>1542373931289</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1542373931289</updated>
+    </task>
+    <task id="LOCAL-00006" summary="new file EXCEL =text+oldExcel&#10;16.11.2018        &#10;&#10;All is ready">
+      <created>1542373987846</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1542373987846</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -517,6 +539,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940476" visible="true" weight="0.15052573" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -528,15 +551,15 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48322147" weight="0.17513514" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48322147" visible="true" weight="0.17513514" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.48590603" weight="0.28108108" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32972974" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32756758" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32756758" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.51409394" side_tool="true" weight="0.65014166" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32972974" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4986577" weight="0.32540542" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4986577" weight="0.32457983" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="1" weight="0.25" />
       <window_info anchor="right" id="Palette" order="2" />
@@ -559,7 +582,8 @@
     <MESSAGE value="Excel=Text Aalizator" />
     <MESSAGE value="new file EXCEL =text+oldExcel&#10;06.11.2018" />
     <MESSAGE value="new file EXCEL =text+oldExcel&#10;06.11.2018        &#10;&#10;All is ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="new file EXCEL =text+oldExcel&#10;06.11.2018        &#10;&#10;All is ready" />
+    <MESSAGE value="new file EXCEL =text+oldExcel&#10;16.11.2018        &#10;&#10;All is ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="new file EXCEL =text+oldExcel&#10;16.11.2018        &#10;&#10;All is ready" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -692,15 +716,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/workWichExcel/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="82" column="38" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="82" selection-end-column="38" />
+        <state relative-caret-position="196">
+          <caret line="69" column="25" lean-forward="true" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/workWichExcel/SearchDoublePhone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="65" lean-forward="true" selection-start-line="38" selection-start-column="65" selection-end-line="38" selection-end-column="65" />
+        <state relative-caret-position="338">
+          <caret line="36" column="19" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

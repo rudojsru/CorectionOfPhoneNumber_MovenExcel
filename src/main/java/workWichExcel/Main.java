@@ -28,14 +28,14 @@ public class Main {
         System.out.println(l);
         for (int i = 0; i < l.size(); i++) {     // List size for беребрать evry elements
             String listWordText = (String) l.get(i);
-            //       System.out.println(listWordText+"-------------------");
+
             String numberOrTextFromList[] = listWordText.split("");
             if ((numberOrTextFromList[0].equals("0") != true) && (numberOrTextFromList[1].equals("7") != true)) {
                 for (int c = 0; c < numerCell; c++) {   // потом в С поставить 1   с=1
                     String nameList = String.valueOf(sheet.getRow(0).getCell(c));
                     if (listWordText.equals(nameList)) {
                         int r = 0;
-                        String s = "";
+
                         while ((sheet.getRow(r) != null) && (sheet.getRow(r).getCell(c) != null)
                                 && (!"".equals(String.valueOf(sheet.getRow(r).getCell(c))))) {   // находит конец столбца в таблице ексель
 
