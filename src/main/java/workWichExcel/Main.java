@@ -1,10 +1,8 @@
 package workWichExcel;
 
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.ss.usermodel.Cell;
-import org.apache.poi.ss.usermodel.Row;
-import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.hssf.util.HSSFColor;
+import org.apache.poi.ss.usermodel.*;
 import workWichTextTxtFiles.TextWriterReader;
 
 import java.io.*;
@@ -37,41 +35,48 @@ public class Main {
                     String nameList = String.valueOf(sheet.getRow(0).getCell(c));
                     if (listWordText.equals(nameList)) {
                         int r = 0;
-                        String s="";
-                        while ((sheet.getRow(r)!=null) && (sheet.getRow(r).getCell(c) != null)) {   // находит конец столбца в таблице ексель
-                             s= String.valueOf(sheet.getRow(r).getCell(c));
-                             System.out.println(s);
+                        String s = "";
+                        while ((sheet.getRow(r) != null) && (sheet.getRow(r).getCell(c) != null)
+                                && (!"".equals(String.valueOf(sheet.getRow(r).getCell(c))))) {   // находит конец столбца в таблице ексель
+
                             r++;
-                        //    i++;
+
                         }
+
                         i++;
                         listWordText = (String) l.get(i);
-                        String numberOrTextFromList2 [] = listWordText.split("");
-                        // Добавляют в ексель телефоны из файла текст.
-                        while ((numberOrTextFromList2[0].equals("0") == true) && (numberOrTextFromList2[1].equals("7") == true)
-                                &&(!"null".equals(listWordText))){
+                        String numberOrTextFromList2[] = listWordText.split("");
 
-                            Cell cell =  sheet.getRow(r).createCell(c);
-                            System.out.println(cell +"!!!!!!!!!!!!!!!!!!!");
+                        //для изменения цвета добовляемых ячеек
+                        CellStyle style = wb.createCellStyle();
+                        Font font = wb.createFont();
+                        font.setColor(HSSFColor.GREEN.index);
+                        style.setFont(font);
+                        // Добавляют в ексель телефоны из файла текст.
+
+                        while ((numberOrTextFromList2[0].equals("0") == true) && (numberOrTextFromList2[1].equals("7") == true)
+                                && (!"null".equals(listWordText))) {
+
+                            Cell cell = sheet.getRow(r).createCell(c);
+                            cell.setCellStyle(style);
                             cell.setCellValue(listWordText);
                             r++;
                             i++;
-                            if( i < l.size()) {
+                            if (i < l.size()) {
                                 listWordText = (String) l.get(i);
                                 numberOrTextFromList2 = listWordText.split("");
-                            }else break;
+                            } else break;
 
                         }
 
                         i--;
-                        System.out.println(r + " - количество рядов");
-                      break;
+                        break;
                     }
                 }
             }
         }
         fis.close();
-        FileOutputStream output_file =new FileOutputStream(track2);
+        FileOutputStream output_file = new FileOutputStream(track2);
         //write changes
         wb.write(output_file);
         output_file.close();
