@@ -82,6 +82,9 @@ public class Main {
         output_file.close();
         System.out.println("The End");
 
+
+        SearchDoublePhone s = new SearchDoublePhone();
+        s.searchDouble();
     }
 
 

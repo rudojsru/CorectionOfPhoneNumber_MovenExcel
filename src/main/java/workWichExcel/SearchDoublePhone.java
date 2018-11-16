@@ -15,11 +15,9 @@ import java.util.List;
 
 public class SearchDoublePhone {
 
-    public static void main(String[] args) throws IOException {
-        searchDouble();
-    }
 
-    public static void searchDouble() throws IOException {
+
+    public  void searchDouble() throws IOException {
         TextWriterReader text = new TextWriterReader();
 
         File track2 = new File(text.trackToFiles() + "modifiedExcel.xls");
