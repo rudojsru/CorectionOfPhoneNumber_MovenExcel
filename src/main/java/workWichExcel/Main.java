@@ -27,12 +27,12 @@ public class Main {
         List l = textWriterReader.listModifiPhone(); // List from TextWriter
         System.out.println(l);
         for (int i = 0; i < l.size(); i++) {     // List size for беребрать evry elements
-            String listWordText = (String) l.get(i);
+            String listWordText = l.get(i).toString().toLowerCase();
 
             String numberOrTextFromList[] = listWordText.split("");
             if ((numberOrTextFromList[0].equals("0") != true) && (numberOrTextFromList[1].equals("7") != true)) {
                 for (int c = 0; c < numerCell; c++) {   // потом в С поставить 1   с=1
-                    String nameList = String.valueOf(sheet.getRow(0).getCell(c));
+                    String nameList = String.valueOf(sheet.getRow(0).getCell(c)).toLowerCase();
                     if (listWordText.equals(nameList)) {
                         int r = 0;
 
